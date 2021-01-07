@@ -1,0 +1,20 @@
+{
+    "name": "alexei/alexei-patern.com",
+    "description": "patern-project",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexei Berezko",
+            "email": "berezkoas@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload" : {
+            "psr-4": {
+                "Alexei\\core\\" : "core",
+                "App\\": "app"
+            }
+    }
+}
