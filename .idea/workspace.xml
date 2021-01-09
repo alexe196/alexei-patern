@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0edd7b06-861f-4fdb-93e7-12fd190cec3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/components/hellow/HelloFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/components/router/RouterFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/contracts/ComponentFactoryAbstract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/alexei-patern.com.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/alexei-patern.com.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/PageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Application.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/Hello.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/hellow/Hello.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/router/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,11 +77,23 @@
       <workItem from="1610195935488" duration="1810000" />
       <workItem from="1610197811560" duration="42000" />
       <workItem from="1610197930628" duration="8589000" />
-      <workItem from="1610207695666" duration="7104000" />
+      <workItem from="1610207695666" duration="7854000" />
     </task>
+    <task id="LOCAL-00001" summary="error all to a member function route()">
+      <created>1610216049738</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610216049738</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="error all to a member function route()" />
+    <option name="LAST_COMMIT_MESSAGE" value="error all to a member function route()" />
   </component>
 </project>

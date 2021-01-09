@@ -19,7 +19,7 @@ class Application implements BootstrapInterface, ContainerInterface, RunnableInt
 
     protected $instances = [];
 
-    public static function getInstance($config)
+    public static function getInstance($config = [])
     {
         if (self::$instance === null) {
             self::$instance = new self($config);
@@ -55,6 +55,7 @@ class Application implements BootstrapInterface, ContainerInterface, RunnableInt
         if (array_key_exists($name, $this->components))
         {
             $factory = new $this->components[$name];
+            echo"===========>".var_dump($factory)."<br>".var_dump($factory->createInstance())."</br>";
             $instance = $factory->createInstance();
             $this->instances[$name] = $instance;
 
