@@ -1,11 +1,12 @@
 <?php
 
 
-namespace Alexei\core;
+namespace Alexei\core\components\router;
 
 
 class Router
 {
+
     public function route()
     {
 

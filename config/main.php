@@ -1,15 +1,15 @@
 <?php
 
-use Alexei\core\Hello;
-use Alexei\core\Router;
+use Alexei\core\components\router\RouterFactory;
+use Alexei\core\components\hellow\HelloFactory;
 
 return [
     'components' => [
         'router' => [
-            'class' => Router::class
+            'factory' => RouterFactory::class
         ],
         'hello' => [
-            'class' => Hello::class,
+            'factory' => HelloFactory::class,
         ]
     ]
 ];

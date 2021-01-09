@@ -8,6 +8,11 @@ require_once '../vendor/autoload.php';
 
 $config = include '../config/main.php';
 
+
+//$v = new Alexei\core\components\router\RouterFactory;
+//$res = $v->createInstance();
+//echo"===========>".var_dump($res);
+
 $app = Application::getInstance($config);
 $app->run();
 

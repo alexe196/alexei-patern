@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Alexei\core;
+namespace Alexei\core\components\hellow;
 
 
 class Hello

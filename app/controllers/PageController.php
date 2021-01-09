@@ -4,6 +4,8 @@
 namespace App\controllers;
 
 
+use Alexei\core\Application;
+
 class PageController
 {
 
@@ -12,10 +14,12 @@ class PageController
         echo 'IndexAction PageController';
     }
 
-    public function viewAction($params)
+    public function viewAction()
     {
-        echo 'View action page controller';
-        print_r($params);
+        $app = Application::getInstance();
+        if ( $app->has('test') ) {
+            echo $app->get('test')->run();
+        }
     }
 
     public function updateAction()

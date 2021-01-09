@@ -17,6 +17,8 @@ class Application implements BootstrapInterface, ContainerInterface, RunnableInt
 
     protected $components = [];
 
+    protected $instances = [];
+
     public static function getInstance($config)
     {
         if (self::$instance === null) {
@@ -29,15 +31,16 @@ class Application implements BootstrapInterface, ContainerInterface, RunnableInt
     protected function __construct($config = [])
     {
         $this->config = $config;
+        $this->bootstrap();
     }
 
     public function bootstrap()
     {
+
         if (!empty($this->config['components'])) {
             foreach ($this->config['components'] as $key => $item) {
-                if (isset($item['class']) && class_exists($item['class'])) {
-                    $instance = new $item['class'];
-                    $this->components[$key] = $instance;
+                if (isset($item['factory']) && class_exists($item['factory'])) {
+                    $this->components[$key] = $item['factory'];
                 }
             }
         }
@@ -45,9 +48,17 @@ class Application implements BootstrapInterface, ContainerInterface, RunnableInt
 
     public function get($name)
     {
-        if (array_key_exists($name, $this->components)) {
+        if (isset($this->instances[$name])) {
+            return $this->instances[$name];
+        }
 
-            return $this->components[$name];
+        if (array_key_exists($name, $this->components))
+        {
+            $factory = new $this->components[$name];
+            $instance = $factory->createInstance();
+            $this->instances[$name] = $instance;
+
+            return $instance;
         }
 
         return null;
@@ -55,13 +66,19 @@ class Application implements BootstrapInterface, ContainerInterface, RunnableInt
 
     public function has($name)
     {
-        // TODO: Implement has() method.
+        if (isset($this->instances[$name])) {
+            return true;
+        }
+
+        if (isset($this->components[$name])) {
+            return true;
+        }
+
+        return false;
     }
 
     public function run()
     {
-        $this->bootstrap();
-
         $router = $this->get('router');
         if ($action = $router->route()) {
             $action();
