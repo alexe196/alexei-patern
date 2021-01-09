@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/core" isTestSource="false" packagePrefix="Alexei\core\" />
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Psr" isTestSource="false" packagePrefix="psr\log\Psr\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/lsys/loger" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/lsys/core" />

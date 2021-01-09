@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0edd7b06-861f-4fdb-93e7-12fd190cec3f" name="Default Changelist" comment="add getInstance($config = [])">
+    <list default="true" id="0edd7b06-861f-4fdb-93e7-12fd190cec3f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/core/loger/FormatLoger.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/loger/Loger.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/loger/WriteLoger.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/loger/logerInterface/FormatInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/loger/logerInterface/WriteInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/alexei-patern.com.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/alexei-patern.com.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Application.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/contracts/ComponentFactoryAbstract.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/contracts/ComponentFactoryAbstract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +83,7 @@
       <workItem from="1610195935488" duration="1810000" />
       <workItem from="1610197811560" duration="42000" />
       <workItem from="1610197930628" duration="8589000" />
-      <workItem from="1610207695666" duration="8520000" />
+      <workItem from="1610207695666" duration="21617000" />
     </task>
     <task id="LOCAL-00001" summary="error all to a member function route()">
       <created>1610216049738</created>
@@ -95,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610216963458</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixed ComponentFactoyAbstract&#10;add  - return">
+      <created>1610217594328</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610217594328</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +115,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="error all to a member function route()" />
     <MESSAGE value="add getInstance($config = [])" />
-    <option name="LAST_COMMIT_MESSAGE" value="add getInstance($config = [])" />
+    <MESSAGE value="fixed ComponentFactoyAbstract&#10;add  - return" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed ComponentFactoyAbstract&#10;add  - return" />
   </component>
 </project>

@@ -13,7 +13,8 @@
     "autoload" : {
             "psr-4": {
                 "Alexei\\core\\" : "core",
-                "App\\": "app"
+                "App\\": "app",
+                "psr\\log\\Psr\\" : "Psr"
             }
     },
     "require": {
