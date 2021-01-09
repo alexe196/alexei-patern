@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0edd7b06-861f-4fdb-93e7-12fd190cec3f" name="Default Changelist" comment="">
+    <list default="true" id="0edd7b06-861f-4fdb-93e7-12fd190cec3f" name="Default Changelist" comment="add getInstance($config = [])">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Application.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/contracts/ComponentFactoryAbstract.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/contracts/ComponentFactoryAbstract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +79,7 @@
       <workItem from="1610195935488" duration="1810000" />
       <workItem from="1610197811560" duration="42000" />
       <workItem from="1610197930628" duration="8589000" />
-      <workItem from="1610207695666" duration="7854000" />
+      <workItem from="1610207695666" duration="8520000" />
     </task>
     <task id="LOCAL-00001" summary="error all to a member function route()">
       <created>1610216049738</created>
@@ -86,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610216049738</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add getInstance($config = [])">
+      <created>1610216963458</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610216963458</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +103,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="error all to a member function route()" />
-    <option name="LAST_COMMIT_MESSAGE" value="error all to a member function route()" />
+    <MESSAGE value="add getInstance($config = [])" />
+    <option name="LAST_COMMIT_MESSAGE" value="add getInstance($config = [])" />
   </component>
 </project>

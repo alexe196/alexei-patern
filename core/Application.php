@@ -31,12 +31,12 @@ class Application implements BootstrapInterface, ContainerInterface, RunnableInt
     protected function __construct($config = [])
     {
         $this->config = $config;
+
         $this->bootstrap();
     }
 
     public function bootstrap()
     {
-
         if (!empty($this->config['components'])) {
             foreach ($this->config['components'] as $key => $item) {
                 if (isset($item['factory']) && class_exists($item['factory'])) {
@@ -52,11 +52,10 @@ class Application implements BootstrapInterface, ContainerInterface, RunnableInt
             return $this->instances[$name];
         }
 
-        if (array_key_exists($name, $this->components))
-        {
+        if (array_key_exists($name, $this->components)) {
             $factory = new $this->components[$name];
-            echo"===========>".var_dump($factory)."<br>".var_dump($factory->createInstance())."</br>";
             $instance = $factory->createInstance();
+
             $this->instances[$name] = $instance;
 
             return $instance;
