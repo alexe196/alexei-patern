@@ -6,9 +6,12 @@ namespace Alexei\core\contracts;
 
 abstract class ComponentFactoryAbstract
 {
-    public function createInstance(){
-        return $this->createConcreteInstance();
+
+    public function createInstance($params = []): ComponentInterface
+    {
+        return $this->createConcreteInstance($params);
     }
 
-    protected abstract function createConcreteInstance();
+
+    protected abstract function createConcreteInstance($params = []): ComponentInterface;
 }

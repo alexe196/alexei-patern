@@ -1,15 +1,28 @@
 <?php
 
+use Alexei\core\components\Database\DbFactory;
 use Alexei\core\components\router\RouterFactory;
-use Alexei\core\components\hellow\HelloFactory;
+use Alexei\core\loger\LoggerFactory;
 
 return [
-    'components' => [
+    'components' =>
+    [
         'router' => [
-            'factory' => RouterFactory::class
+            'factory' => RouterFactory::class,
         ],
-        'hello' => [
-            'factory' => HelloFactory::class,
+        'logger' => [
+            'factory' => LoggerFactory::class,
+            'params' => [
+                'logFile' => $_SERVER['DOCUMENT_ROOT'] . '/../storage/logs/log.txt',
+            ],
+        ],
+        'db' => [
+            'factory' => DbFactory::class,
+            'params' => [
+                'dsn' => 'test',
+                'user' => 'root',
+                'password' => 'hello'
+            ]
         ]
     ]
 ];

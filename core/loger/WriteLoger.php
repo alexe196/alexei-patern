@@ -8,13 +8,14 @@ class WriteLoger implements  Writeinterface
     private $path = 'loger.txt';
     public $context;
 
-    public function __construct($context)
+    public function __construct($path)
     {
-        $this->context = $context;
+       $this->path = $path;
     }
 
-    function write()
+    function write($context)
     {
+        $this->context = $context;
         $this->set_file();
     }
 
@@ -30,9 +31,7 @@ class WriteLoger implements  Writeinterface
     function set_file()
     {
         if ($this->hasFile()) {
-            $fd = fopen($this->path, 'w') or die("не удалось создать файл");
-            fwrite($fd, $this->context );
-            fclose($fd);
+            file_put_contents($this->path, $this->context. "\n", FILE_APPEND);
         }
     }
 }

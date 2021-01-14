@@ -7,15 +7,15 @@ use Alexei\core\loger\logerInterface\FormatInterface;
 class FormatLoger implements FormatInterface
 {
     public $exception = array();
+    public $message = '';
     public $convertStr = '';
 
-    public function __construct(array $exception)
-    {
-        $this->exception = $exception;
-    }
 
-    public function Conwert()
+    public function format($level, $message, $context)
     {
+        $this->message = $level."-".$message;
+        $this->exception = $context;
+
         return $this->set_context();
     }
 
@@ -34,6 +34,7 @@ class FormatLoger implements FormatInterface
         if ($this->hasexception()) {
 
             $this->convertStr ="Erorr: " . $this->exception['getMessage']." ";
+            $this->convertStr.= $this->message." ";
             $this->convertStr.= date('Y-m-d H:i:s')." ";
             $this->convertStr.= $this->exception['getLine']." ";
             $this->convertStr.= $this->exception['getFile'];

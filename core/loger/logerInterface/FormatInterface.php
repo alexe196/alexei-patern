@@ -6,5 +6,5 @@ namespace Alexei\core\loger\logerInterface;
 
 interface FormatInterface
 {
-    function Conwert();
+    function format($level, $message, $context);
 }
