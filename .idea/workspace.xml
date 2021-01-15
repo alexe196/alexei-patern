@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0edd7b06-861f-4fdb-93e7-12fd190cec3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/components/Database/Db.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/components/Database/DbFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/contracts/ComponentInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/loger/LogerFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/routes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/loger/ExeptionFormater.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/hellow/Hello.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/hellow/HelloFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/router/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/router/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/contracts/ComponentFactoryAbstract.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/contracts/ComponentFactoryAbstract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/components/Database/Db.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/Database/Db.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/loger/FormatLoger.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/loger/FormatLoger.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/loger/Loger.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/loger/Loger.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/loger/WriteLoger.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/loger/WriteLoger.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/loger/logerInterface/FormatInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/loger/logerInterface/FormatInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/loger/logerInterface/WriteInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/loger/logerInterface/WriteInterface.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +81,7 @@
       <workItem from="1610197930628" duration="8589000" />
       <workItem from="1610207695666" duration="21879000" />
       <workItem from="1610658308622" duration="289000" />
-      <workItem from="1610658773576" duration="4641000" />
+      <workItem from="1610658773576" duration="8890000" />
     </task>
     <task id="LOCAL-00001" summary="error all to a member function route()">
       <created>1610216049738</created>
@@ -123,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610236087597</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add new router, loger, db and interfases">
+      <created>1610665361223</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610665361223</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +129,7 @@
     <MESSAGE value="add getInstance($config = [])" />
     <MESSAGE value="fixed ComponentFactoyAbstract&#10;add  - return" />
     <MESSAGE value="add loger" />
-    <option name="LAST_COMMIT_MESSAGE" value="add loger" />
+    <MESSAGE value="add new router, loger, db and interfases" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new router, loger, db and interfases" />
   </component>
 </project>

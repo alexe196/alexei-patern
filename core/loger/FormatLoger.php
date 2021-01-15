@@ -37,6 +37,7 @@ class FormatLoger implements FormatInterface
             $this->convertStr.= $this->message." ";
             $this->convertStr.= date('Y-m-d H:i:s')." ";
             $this->convertStr.= $this->exception['getLine']." ";
+            $this->convertStr.= $this->exception['getCode']." ";
             $this->convertStr.= $this->exception['getFile'];
 
             return $this->convertStr;

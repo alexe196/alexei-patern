@@ -17,11 +17,14 @@ class Db implements ComponentInterface, BootstrapInterface
 
     protected $connection;
 
+    protected $table;
+
     public function __construct($dsn, $user, $password)
     {
         $this->dsn = $dsn;
         $this->user = $user;
         $this->password = $password;
+        $this->connect();
     }
 
     public function bootstrap()
@@ -31,8 +34,27 @@ class Db implements ComponentInterface, BootstrapInterface
 
     public function connect()
     {
-        $this->connection = new \PDO($this->dsn, $this->user, $this->password);
+        try {
+            $this->connection = new \PDO($this->dsn, $this->user, $this->password);
+        }
+        catch (\PDOException $e){
+            $exception = new \Alexei\core\loger\ ExeptionFormater($e);
+        }
+        return $this;
     }
+
+    public function table($table){
+        $this->table = $table;
+    }
+
+    public function select($select = []){
+
+        if ( !empty($select) ) {
+            return implode(",", $select);
+        }
+        return false;
+    }
+
 
     public function query()
     {
