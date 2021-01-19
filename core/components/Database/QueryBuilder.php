@@ -168,7 +168,11 @@ class QueryBuilder implements QueryBuilderInterface
         }
     }
 
-    private function buildLimit()
+
+    /**
+     *
+     */
+    private function buildLimit():void
     {
         if($this->typeQuery == 'all') {
             if (empty($this->limit)) {
@@ -182,8 +186,24 @@ class QueryBuilder implements QueryBuilderInterface
         else{
             $this->sql .= 'LIMIT 1';
         }
+
     }
 
+    /**
+     * @param array $params
+     * @return string
+     */
+    function getArrayForStrSql(array $params = []) : string
+    {
+        if (!empty($params)) {
+            return implode(",", $params);
+        }
+    }
+
+    /**
+     * @return string
+     * $this->>sql
+     */
     public function build(): string
     {
 
@@ -214,13 +234,9 @@ class QueryBuilder implements QueryBuilderInterface
     }
 
 
-    function getArrayForStrSql( array $params = []) : string
-    {
-        if (!empty($params)) {
-           return implode(",", $params);
-        }
-    }
-
+    /**
+     * @return QueryBuilderInterface
+     */
     public function one(): QueryBuilderInterface
     {
         $this->typeQuery = 'one';
@@ -240,6 +256,9 @@ class QueryBuilder implements QueryBuilderInterface
 
     }
 
+    /**
+     * @return QueryBuilderInterface
+     */
     public function all(): QueryBuilderInterface
     {
         $this->typeQuery = 'all';
