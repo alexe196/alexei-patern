@@ -4,8 +4,11 @@
 namespace Alexei\core\components\Database;
 
 
+
+use Alexei\core\Application;
 use Alexei\core\contracts\BootstrapInterface;
 use Alexei\core\contracts\ComponentInterface;
+use PDO;
 
 class Db implements ComponentInterface, BootstrapInterface
 {
@@ -24,7 +27,6 @@ class Db implements ComponentInterface, BootstrapInterface
         $this->dsn = $dsn;
         $this->user = $user;
         $this->password = $password;
-        $this->connect();
     }
 
     public function bootstrap()
@@ -38,26 +40,23 @@ class Db implements ComponentInterface, BootstrapInterface
             $this->connection = new \PDO($this->dsn, $this->user, $this->password);
         }
         catch (\PDOException $e){
+
             $exception = new \Alexei\core\loger\ ExeptionFormater($e);
+            $message = 'DB_CONNECT';
+            $level = 1;
+            Application::getInstance()->get('logger')->log($level, $message,$exception);
+
         }
         return $this;
     }
 
-    public function table($table){
-        $this->table = $table;
-    }
 
-    public function select($select = []){
-
-        if ( !empty($select) ) {
-            return implode(",", $select);
-        }
-        return false;
-    }
-
-
-    public function query()
+    public function query($sql)
     {
-
+        if (!empty($sql)) {
+            $this->connection->prepare($sql);
+            $this->connection->execute();
+            return $this->connection->fetchAll(PDO::FETCH_ASSOC);
+        }
     }
 }
